@@ -1,14 +1,15 @@
 const merge = require('webpack-merge')
 const base = require('./webpack.base.js')
 
-module.exports = merge(base, {
+const dev = {
   mode: 'development',
   devServer: {
+    hot: true,
     open: true,
-    contentBase: './dist',
-    port: '8080',
     inline: true,
-    historyApiFallback: true,
-    hot: true
+    port: '8080',
+    contentBase: './dist',
+    historyApiFallback: true
   }
-})
+}
+module.exports = merge(base, dev)

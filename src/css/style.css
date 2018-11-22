@@ -6,7 +6,7 @@ body {
 #root div {
   width: 200px;
   margin-top: 50px;
-  transform: rotate(45deg) /* 自动产生前缀 */ 
+  transform: rotate(2deg) /* 自动产生前缀 */ 
 }
 
 .a{                 /* 冗余css */
